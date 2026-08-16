@@ -94,12 +94,12 @@
             var dx = p.x - q.x, dy = p.y - q.y;
             var dist = Math.sqrt(dx * dx + dy * dy);
             if (dist < LINK_DIST) {
-              ctx.strokeStyle = 'rgba(147,227,91,' + (0.16 * (1 - dist / LINK_DIST)) + ')';
+              ctx.strokeStyle = 'rgba(27,74,12,' + (0.22 * (1 - dist / LINK_DIST)) + ')';
               ctx.lineWidth = 1;
               ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
             }
           }
-          ctx.fillStyle = 'rgba(147,227,91,0.55)';
+          ctx.fillStyle = 'rgba(27,74,12,0.5)';
           ctx.beginPath(); ctx.arc(p.x, p.y, 1.6, 0, Math.PI * 2); ctx.fill();
         }
         if (!reduce) requestAnimationFrame(frame);
