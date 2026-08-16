@@ -87,17 +87,17 @@ padding-bottom: 3px; border-bottom: 1px solid currentColor; opacity: 0.85; trans
 .link-arrow:hover { opacity: 1; gap: 12px; }
 .link-arrow svg { width: 13px; height: 13px; }
 #cursor-glow {
-position: fixed; top: 0; left: 0; width: 340px; height: 340px; border-radius: 50%; pointer-events: none;
-background: radial-gradient(circle, rgba(107,199,46,0.16), transparent 70%);
+position: fixed; top: 0; left: 0; width: 130px; height: 130px; border-radius: 50%; pointer-events: none;
+background: radial-gradient(circle, rgba(107,199,46,0.12), transparent 70%);
 transform: translate(-50%, -50%); z-index: 2; opacity: 0; transition: opacity 0.3s ease; will-change: transform;
 }
 #cursor-glow.is-active { opacity: 1; }
 header.site-nav { position: sticky; top: 0; z-index: 60; background: rgba(10,15,7,0.78); backdrop-filter: blur(14px); border-bottom: 1px solid var(--dark-line); }
 .nav-row { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; gap: 20px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
-.brand-mark { width: 34px; height: auto; flex-shrink: 0; object-fit: contain; }
+.brand-mark { width: 34px; height: auto; flex-shrink: 0; object-fit: contain; filter: brightness(0) invert(1); }
 .foot-logo-link { display: inline-flex; }
-.foot-logo { width: 100%; max-width: 220px; height: auto; }
+.foot-logo { width: 100%; max-width: 220px; height: auto; filter: brightness(0) invert(1); }
 .brand-word { font-family: var(--font-display); font-size: 1.1rem; color: var(--dark-text); font-weight: 800; letter-spacing: -0.02em; }
 .brand-word b { color: var(--brand-glow); font-weight: 800; }
 nav.nav-links { display: flex; align-items: center; gap: 32px; }
