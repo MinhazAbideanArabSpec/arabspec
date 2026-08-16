@@ -1,20 +1,5 @@
 (function () {
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var fine = window.matchMedia('(pointer: fine)').matches;
-
-    if (fine && !reduce) {
-      var glow = document.getElementById('cursor-glow');
-      var tx = 0, ty = 0, cx = 0, cy = 0, active = false;
-      window.addEventListener('mousemove', function (e) {
-        tx = e.clientX; ty = e.clientY;
-        if (!active) { active = true; glow.classList.add('is-active'); }
-      });
-      (function loop() {
-        cx += (tx - cx) * 0.14; cy += (ty - cy) * 0.14;
-        glow.style.transform = 'translate(' + cx + 'px,' + cy + 'px) translate(-50%,-50%)';
-        requestAnimationFrame(loop);
-      })();
-    }
 
     var targets = document.querySelectorAll('.reveal');
     var supportsScrollTimeline = CSS && CSS.supports && CSS.supports('animation-timeline: view()');

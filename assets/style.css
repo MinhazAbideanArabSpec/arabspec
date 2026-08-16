@@ -86,12 +86,6 @@ padding-bottom: 3px; border-bottom: 1px solid currentColor; opacity: 0.85; trans
 }
 .link-arrow:hover { opacity: 1; gap: 12px; }
 .link-arrow svg { width: 13px; height: 13px; }
-#cursor-glow {
-position: fixed; top: 0; left: 0; width: 130px; height: 130px; border-radius: 50%; pointer-events: none;
-background: radial-gradient(circle, rgba(107,199,46,0.12), transparent 70%);
-transform: translate(-50%, -50%); z-index: 2; opacity: 0; transition: opacity 0.3s ease; will-change: transform;
-}
-#cursor-glow.is-active { opacity: 1; }
 header.site-nav { position: sticky; top: 0; z-index: 60; background: rgba(10,15,7,0.78); backdrop-filter: blur(14px); border-bottom: 1px solid var(--dark-line); }
 .nav-row { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; gap: 20px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
