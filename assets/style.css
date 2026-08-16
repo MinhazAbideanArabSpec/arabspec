@@ -65,13 +65,13 @@ font-weight: 700; padding: 15px 26px; border-radius: 100px; border: 1px solid tr
 text-decoration: none; transition: transform 0.18s cubic-bezier(.2,.8,.3,1.3), box-shadow 0.18s ease, background 0.15s ease;
 }
 .btn:focus-visible { outline: 2px solid var(--brand-pop); outline-offset: 3px; }
-.btn-pop { position: relative; background: var(--brand-pop); color: var(--brand-ink); z-index: 1; }
+.btn-pop { position: relative; background: var(--brand-deep); color: var(--dark-text); z-index: 1; }
 .btn-pop::before {
 content: ""; position: absolute; inset: -3px; border-radius: inherit; z-index: -1; opacity: 0;
-background: conic-gradient(from 0deg, var(--brand-pop), var(--brand-teal), var(--brand-glow), var(--brand-pop));
+background: conic-gradient(from 0deg, var(--brand-deep), var(--brand-teal), var(--brand), var(--brand-deep));
 filter: blur(9px); animation: spin-glow 4s linear infinite; transition: opacity 0.25s ease;
 }
-.btn-pop:hover { transform: translateY(-2px) scale(1.02); background: var(--brand-glow); box-shadow: 0 20px 50px -18px rgba(107,199,46,0.55); }
+.btn-pop:hover { transform: translateY(-2px) scale(1.02); background: var(--brand); box-shadow: 0 20px 50px -18px rgba(2,84,48,0.55); }
 .btn-pop:hover::before { opacity: 0.85; }
 @keyframes spin-glow { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .btn-pop::before { animation: none; } }
@@ -93,7 +93,7 @@ header.site-nav { position: sticky; top: 0; z-index: 60; background: rgba(10,15,
 .foot-logo-link { display: inline-flex; }
 .foot-logo { width: 100%; max-width: 220px; height: auto; filter: brightness(0) invert(1); }
 .brand-word { font-family: var(--font-display); font-size: 1.1rem; color: var(--dark-text); font-weight: 800; letter-spacing: -0.02em; }
-.brand-word b { color: var(--brand-glow); font-weight: 800; }
+.brand-word b { color: var(--brand-teal); font-weight: 800; }
 nav.nav-links { display: flex; align-items: center; gap: 32px; }
 .navitem { position: relative; }
 nav.nav-links a.navlink { font-family: var(--font-display); font-size: 0.92rem; font-weight: 700; letter-spacing: -0.01em; color: var(--dark-text-soft); text-decoration: none; transition: color 0.15s ease; padding: 10px 0; display: inline-block; }
