@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arabspec.vercel.app/sitemap.xml
