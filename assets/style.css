@@ -162,6 +162,8 @@ mask-image: linear-gradient(to bottom, transparent, #000 30%, #000 70%, transpar
 .numbers .wrap { position: relative; z-index: 1; }
 .numbers-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
 .numbers-grid > div { padding: 20px clamp(10px, 2vw, 28px); border-left: 1px solid var(--dark-line); }
+.numbers-grid.single { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+.numbers-grid.single > div { border-left: none; padding: 0; }
 .numbers-grid > div:first-child { border-left: none; padding-left: 0; }
 .num-big { font-family: var(--font-display); font-weight: 800; font-size: clamp(3.4rem, 9vw, 7.5rem); letter-spacing: -0.04em; color: var(--dark-text); font-variant-numeric: tabular-nums; line-height: 0.9; }
 .num-lbl { font-family: var(--font-mono); font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--dark-text-faint); margin-top: 14px; }
