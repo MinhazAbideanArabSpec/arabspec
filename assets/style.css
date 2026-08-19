@@ -66,8 +66,8 @@ nav.nav-links a.navlink:hover { color: var(--brand); }
 .highlights { background: var(--paper); padding: clamp(40px, 6vw, 64px) 0; margin-top: -1px; }
 .highlight-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .highlight { text-align: center; padding: 30px 20px; }
-.hl-icon { width: 56px; height: 56px; border-radius: 50%; background: var(--brand-tint); color: var(--brand-deep); display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; }
-.hl-icon svg { width: 26px; height: 26px; }
+.hl-icon { width: 68px; height: 68px; border-radius: 18px; background: var(--brand-tint); color: var(--brand-deep); display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; }
+.hl-icon svg { width: 32px; height: 32px; }
 .highlight h4 { font-size: 1.1rem; margin-bottom: 8px; }
 .highlight p { font-size: 0.92rem; color: var(--ink-soft); }
 @media (max-width: 780px) { .highlight-row { grid-template-columns: 1fr; gap: 8px; } }
@@ -76,7 +76,7 @@ section.section.on-band { background: var(--band); }
 .section-head { max-width: 860px; margin: 0 auto clamp(36px, 5vw, 56px); text-align: center; }
 .section-head h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); margin-top: 10px; }
 .section-head p { color: var(--ink-soft); margin-top: 14px; font-size: 1.02rem; }
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 72px); align-items: start; }
 .about-copy .eyebrow { display: block; margin-bottom: 10px; }
 .about-copy h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); margin-bottom: 18px; }
 .about-copy p { font-size: 1rem; color: var(--ink-soft); margin-bottom: 14px; }
