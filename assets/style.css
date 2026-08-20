@@ -44,15 +44,25 @@ header.site-nav { position: sticky; top: 0; z-index: 60; background: rgba(255,25
 .brand-mark { width: 40px; height: auto; flex-shrink: 0; }
 .brand-word { font-family: var(--font-head); font-size: 1.3rem; color: var(--brand-deep); font-weight: 900; letter-spacing: -0.01em; }
 nav.nav-links { display: flex; align-items: center; gap: 26px; }
-nav.nav-links a.navlink { font-family: var(--font-head); font-size: 0.92rem; font-weight: 700; color: var(--ink); text-decoration: none; transition: color 0.15s ease; }
+nav.nav-links a.navlink { font-family: var(--font-head); font-size: 0.86rem; font-weight: 700; color: var(--ink); text-decoration: none; text-transform: uppercase; letter-spacing: 0.04em; transition: color 0.15s ease; }
 nav.nav-links a.navlink:hover { color: var(--brand); }
+.nav-item { position: relative; display: flex; align-items: center; }
+.nav-item .caret { width: 12px; height: 12px; margin-left: 4px; color: var(--ink-faint); transition: transform 0.15s ease; }
+.nav-item:hover .caret, .nav-item:focus-within .caret { transform: rotate(180deg); color: var(--brand); }
+.mega-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(6px); background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); padding: 10px; width: 300px; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.15s ease, transform 0.15s ease; z-index: 70; }
+.nav-item:hover .mega-menu, .nav-item:focus-within .mega-menu { opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+.mega-item { display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 9px; text-decoration: none; color: var(--ink); font-weight: 700; font-family: var(--font-head); font-size: 0.86rem; text-transform: none; letter-spacing: normal; }
+.mega-item:hover { background: var(--brand-tint); }
+.mega-item .icon-wrap { width: 30px; height: 30px; border-radius: 8px; background: var(--brand-tint); color: var(--brand-deep); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.mega-item svg { width: 16px; height: 16px; }
 .nav-cta { display: flex; align-items: center; gap: 16px; }
 .nav-login { font-family: var(--font-head); font-size: 0.9rem; font-weight: 700; color: var(--ink); text-decoration: none; }
 .nav-login:hover { color: var(--brand); }
 .icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 6px; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; }
 .menu-toggle { display: none; }
 #mobile-menu { border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); box-shadow: var(--shadow); padding: 10px; margin: auto; inset: unset; top: 62px; right: 16px; left: 16px; width: auto; }
-#mobile-menu a { display: block; padding: 13px 14px; border-radius: 6px; text-decoration: none; color: var(--ink); font-weight: 700; font-family: var(--font-head); font-size: 0.95rem; }
+#mobile-menu a { display: block; padding: 13px 14px; border-radius: 6px; text-decoration: none; color: var(--ink); font-weight: 700; font-family: var(--font-head); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.03em; }
+#mobile-menu a.mobile-sub { padding: 10px 14px 10px 28px; font-size: 0.85rem; text-transform: none; letter-spacing: normal; color: var(--ink-soft); }
 #mobile-menu a:hover { background: var(--brand-tint); }
 @media (max-width: 920px) { nav.nav-links { display: none; } .menu-toggle { display: inline-flex; } }
 .hero-band { position: relative; background: linear-gradient(180deg, var(--brand-deep) 0%, #063d24 100%); overflow: hidden; }
