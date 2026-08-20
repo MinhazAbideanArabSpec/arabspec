@@ -62,9 +62,13 @@ nav.nav-links a.navlink:hover { color: var(--brand); }
 .hero-node .icon-wrap { width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.14); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .hero-node svg { width: 18px; height: 18px; color: #D6F278; }
 .hero-node span { font-size: 0.8rem; font-weight: 700; color: #fff; letter-spacing: 0.01em; white-space: nowrap; }
-.hero-node-ai { top: 12%; left: 3%; animation-delay: 0s; }
-.hero-node-security { top: 10%; right: 3%; animation-delay: 1.6s; }
-.hero-node-infra { bottom: 8%; left: 5%; animation-delay: 3.2s; }
+.hero-node-ai { top: 10%; left: 16%; animation-delay: 0s; }
+.hero-node-infra { top: 32%; left: 8%; animation-delay: 2.1s; }
+.hero-node-hosting { top: 58%; left: 8%; animation-delay: 4.2s; }
+.hero-node-amc { top: 80%; left: 16%; animation-delay: 1.1s; }
+.hero-node-security { top: 8%; right: 16%; animation-delay: 1.6s; }
+.hero-node-domain { top: 42%; right: 8%; animation-delay: 3.6s; }
+.hero-node-cabling { top: 76%; right: 16%; animation-delay: 5s; }
 @keyframes heroNodeFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 @media (max-width: 900px) { .hero-node { display: none; } }
 @media (prefers-reduced-motion: reduce) { .hero-node { animation: none; } }
