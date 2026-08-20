@@ -115,7 +115,7 @@ padding: 18px 22px; box-shadow: var(--shadow); display: flex; align-items: cente
 @media (max-width: 560px) { .about-badge { left: 12px; bottom: -16px; padding: 14px 18px; } }
 @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } }
 .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-.svc-card { position: relative; border-radius: 16px; overflow: hidden; min-height: 260px; display: flex; align-items: flex-end; padding: 24px; background-size: cover; background-position: center; isolation: isolate; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: var(--shadow-sm); }
+.svc-card { position: relative; border-radius: 16px; overflow: hidden; min-height: 260px; display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; background-size: cover; background-position: center; isolation: isolate; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: var(--shadow-sm); }
 .svc-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
 .svc-card::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(2,20,12,0.05) 32%, rgba(2,20,12,0.9) 100%); z-index: 0; }
 .svc-card h3 { position: relative; z-index: 1; font-size: 1.06rem; margin-bottom: 8px; color: #fff; }
